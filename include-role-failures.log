@@ -1,0 +1,2198 @@
+ansible-playbook 2.9.7
+  config file = /home/centos/reproducer/ansible.cfg
+  configured module search path = ['/home/centos/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.6/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.6.8 (default, Nov 21 2019, 19:31:34) [GCC 8.3.1 20190507 (Red Hat 8.3.1-4)]
+Using /home/centos/reproducer/ansible.cfg as config file
+setting up inventory plugins
+host_list declined parsing /home/centos/reproducer/inv as it did not pass its verify_file() method
+script declined parsing /home/centos/reproducer/inv as it did not pass its verify_file() method
+auto declined parsing /home/centos/reproducer/inv as it did not pass its verify_file() method
+Parsed /home/centos/reproducer/inv inventory source with ini plugin
+Loading callback plugin default of type stdout, v2.0 from /usr/lib/python3.6/site-packages/ansible/plugins/callback/default.py
+
+PLAYBOOK: include-role-failures.yaml ***********************************************************************************************************************************************************************************************************************************************************************************************
+Positional arguments: include-role-failures.yaml
+verbosity: 4
+connection: smart
+timeout: 10
+become_method: sudo
+tags: ('all',)
+inventory: ('/home/centos/reproducer/inv',)
+forks: 5
+1 plays in include-role-failures.yaml
+
+PLAY [all] *************************************************************************************************************************************************************************************************************************************************************************************************************************
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+
+TASK [random_sleep : Generate sleep time] ******************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:3
+ok: [host000] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host001] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host002] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host004] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host003] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host005] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host006] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host007] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host008] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host010] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host009] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host011] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host012] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host013] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host015] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host014] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host016] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host017] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host018] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host019] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host020] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host021] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host022] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host023] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host024] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host025] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+ok: [host026] => {
+    "ansible_facts": {
+        "sleep_time": "2"
+    },
+    "changed": false
+}
+<host000> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host000> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host001> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host001> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host000> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626 && echo ansible-tmp-1589492333.7114-334874-219827553681626="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626 `" ) && sleep 0'
+<host001> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826 && echo ansible-tmp-1589492333.7210393-334875-6377406041826="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826 `" ) && sleep 0'
+<host002> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host002> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host002> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790 && echo ansible-tmp-1589492333.7329211-334876-160779880206790="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790 `" ) && sleep 0'
+<host003> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host003> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host004> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host004> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host003> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626 && echo ansible-tmp-1589492333.751591-334877-82540559582626="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626 `" ) && sleep 0'
+<host004> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470 && echo ansible-tmp-1589492333.7630224-334878-172789747505470="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470 `" ) && sleep 0'
+<host000> Attempting python interpreter discovery
+<host000> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host001> Attempting python interpreter discovery
+<host002> Attempting python interpreter discovery
+<host004> Attempting python interpreter discovery
+<host001> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host002> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host004> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host003> Attempting python interpreter discovery
+<host003> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host000> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host001> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host003> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host002> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host004> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host001> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpk_w9oqpr TO /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826/AnsiballZ_command.py
+<host001> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826/ /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host001> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826/AnsiballZ_command.py && sleep 0'
+<host002> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmprcoq82at TO /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790/AnsiballZ_command.py
+<host004> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpkbn6sn31 TO /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470/AnsiballZ_command.py
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host002> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790/ /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790/AnsiballZ_command.py && sleep 0'
+<host004> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470/ /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470/AnsiballZ_command.py && sleep 0'
+<host000> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpexuw204d TO /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626/AnsiballZ_command.py
+<host000> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626/ /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host002> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790/AnsiballZ_command.py && sleep 0'
+<host003> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp4ko5s2jm TO /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626/AnsiballZ_command.py
+<host003> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626/ /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626/AnsiballZ_command.py && sleep 0'
+<host000> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626/AnsiballZ_command.py && sleep 0'
+<host004> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470/AnsiballZ_command.py && sleep 0'
+<host003> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626/AnsiballZ_command.py && sleep 0'
+<host001> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492333.7210393-334875-6377406041826/ > /dev/null 2>&1 && sleep 0'
+<host000> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492333.7114-334874-219827553681626/ > /dev/null 2>&1 && sleep 0'
+<host005> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host005> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host006> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host006> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host005> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344 && echo ansible-tmp-1589492334.2721643-334976-14091539394344="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344 `" ) && sleep 0'
+<host006> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317 && echo ansible-tmp-1589492334.2728808-334977-90284766928317="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317 `" ) && sleep 0'
+<host005> Attempting python interpreter discovery
+<host005> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host006> Attempting python interpreter discovery
+<host006> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host005> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host006> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host006> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp4pha_krs TO /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317/AnsiballZ_command.py
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host005> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpdvdi64uc TO /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344/AnsiballZ_command.py
+<host006> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317/ /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317/AnsiballZ_command.py && sleep 0'
+<host005> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344/ /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344/AnsiballZ_command.py && sleep 0'
+<host006> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317/AnsiballZ_command.py && sleep 0'
+<host005> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344/AnsiballZ_command.py && sleep 0'
+<host004> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492333.7630224-334878-172789747505470/ > /dev/null 2>&1 && sleep 0'
+<host007> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host007> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host007> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587 && echo ansible-tmp-1589492335.277953-335018-136366690466587="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587 `" ) && sleep 0'
+<host007> Attempting python interpreter discovery
+<host007> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host007> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host007> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp10u0mn6x TO /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587/AnsiballZ_command.py
+<host007> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587/ /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587/AnsiballZ_command.py && sleep 0'
+<host007> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587/AnsiballZ_command.py && sleep 0'
+<host002> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492333.7329211-334876-160779880206790/ > /dev/null 2>&1 && sleep 0'
+<host003> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492333.751591-334877-82540559582626/ > /dev/null 2>&1 && sleep 0'
+<host008> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host008> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host008> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622 && echo ansible-tmp-1589492336.2732885-335152-158842335524622="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622 `" ) && sleep 0'
+<host009> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host009> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host009> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080 && echo ansible-tmp-1589492336.2834358-335154-232822124263080="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080 `" ) && sleep 0'
+<host008> Attempting python interpreter discovery
+<host008> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host009> Attempting python interpreter discovery
+<host009> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host008> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host009> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host008> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpygzubh6a TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622/AnsiballZ_command.py
+<host008> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622/AnsiballZ_command.py && sleep 0'
+<host008> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host009> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpk6tbdkts TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080/AnsiballZ_command.py
+<host009> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080/AnsiballZ_command.py && sleep 0'
+<host009> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080/AnsiballZ_command.py && sleep 0'
+<host006> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492334.2728808-334977-90284766928317/ > /dev/null 2>&1 && sleep 0'
+<host007> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492335.277953-335018-136366690466587/ > /dev/null 2>&1 && sleep 0'
+<host009> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.2834358-335154-232822124263080/ > /dev/null 2>&1 && sleep 0'
+<host008> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.2732885-335152-158842335524622/ > /dev/null 2>&1 && sleep 0'
+<host010> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host010> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host011> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host011> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host011> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302 && echo ansible-tmp-1589492336.691995-335208-215618096088302="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302 `" ) && sleep 0'
+<host010> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518 && echo ansible-tmp-1589492336.6916852-335206-130876816464518="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518 `" ) && sleep 0'
+<host012> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host012> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host013> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host013> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host012> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111 && echo ansible-tmp-1589492336.7038743-335211-104242581392111="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111 `" ) && sleep 0'
+<host013> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954 && echo ansible-tmp-1589492336.7113254-335212-192445578184954="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954 `" ) && sleep 0'
+<host011> Attempting python interpreter discovery
+<host011> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host010> Attempting python interpreter discovery
+<host010> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host013> Attempting python interpreter discovery
+<host013> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host011> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host010> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host013> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host012> Attempting python interpreter discovery
+<host012> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host012> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host011> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpoysizo1h TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302/AnsiballZ_command.py
+<host010> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp2jjqqbe7 TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518/AnsiballZ_command.py
+<host011> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302/AnsiballZ_command.py && sleep 0'
+<host010> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host013> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp7t528t9v TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954/AnsiballZ_command.py
+<host013> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954/AnsiballZ_command.py && sleep 0'
+<host010> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518/AnsiballZ_command.py && sleep 0'
+<host011> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302/AnsiballZ_command.py && sleep 0'
+<host013> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host012> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp272mu1h1 TO /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111/AnsiballZ_command.py
+<host012> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111/ /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111/AnsiballZ_command.py && sleep 0'
+<host012> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111/AnsiballZ_command.py && sleep 0'
+<host011> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.691995-335208-215618096088302/ > /dev/null 2>&1 && sleep 0'
+<host012> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.7038743-335211-104242581392111/ > /dev/null 2>&1 && sleep 0'
+<host014> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host014> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host014> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554 && echo ansible-tmp-1589492337.0978334-335288-76032815530554="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554 `" ) && sleep 0'
+<host015> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host015> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host015> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611 && echo ansible-tmp-1589492337.1252606-335292-230634969231611="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611 `" ) && sleep 0'
+<host014> Attempting python interpreter discovery
+<host014> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host014> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host015> Attempting python interpreter discovery
+<host015> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host015> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host014> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmphno1pspe TO /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554/AnsiballZ_command.py
+<host014> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554/ /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554/AnsiballZ_command.py && sleep 0'
+<host014> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host015> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpzo_0clpp TO /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611/AnsiballZ_command.py
+<host015> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611/ /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611/AnsiballZ_command.py && sleep 0'
+<host015> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611/AnsiballZ_command.py && sleep 0'
+<host015> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492337.1252606-335292-230634969231611/ > /dev/null 2>&1 && sleep 0'
+<host016> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host016> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host016> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343 && echo ansible-tmp-1589492337.5366244-335332-235342159685343="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343 `" ) && sleep 0'
+<host016> Attempting python interpreter discovery
+<host016> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host016> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host005> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492334.2721643-334976-14091539394344/ > /dev/null 2>&1 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host016> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmphom4f_mg TO /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343/AnsiballZ_command.py
+<host016> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343/ /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343/AnsiballZ_command.py && sleep 0'
+<host016> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343/AnsiballZ_command.py && sleep 0'
+<host017> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host017> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host017> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764 && echo ansible-tmp-1589492337.6811342-335348-137531048473764="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764 `" ) && sleep 0'
+<host017> Attempting python interpreter discovery
+<host017> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host017> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host017> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp2rk9c48v TO /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764/AnsiballZ_command.py
+<host017> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764/ /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764/AnsiballZ_command.py && sleep 0'
+<host017> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764/AnsiballZ_command.py && sleep 0'
+<host016> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492337.5366244-335332-235342159685343/ > /dev/null 2>&1 && sleep 0'
+<host018> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host018> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host018> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046 && echo ansible-tmp-1589492337.979571-335407-138519137607046="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046 `" ) && sleep 0'
+<host010> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.6916852-335206-130876816464518/ > /dev/null 2>&1 && sleep 0'
+<host018> Attempting python interpreter discovery
+<host018> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host018> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host018> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpc4h2hqmj TO /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046/AnsiballZ_command.py
+<host018> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046/ /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046/AnsiballZ_command.py && sleep 0'
+<host018> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046/AnsiballZ_command.py && sleep 0'
+<host019> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host019> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host019> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213 && echo ansible-tmp-1589492338.1282759-335490-90712031922213="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213 `" ) && sleep 0'
+<host019> Attempting python interpreter discovery
+<host019> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host019> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host019> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp30dwc_v9 TO /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213/AnsiballZ_command.py
+<host019> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213/ /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213/AnsiballZ_command.py && sleep 0'
+<host019> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213/AnsiballZ_command.py && sleep 0'
+<host013> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492336.7113254-335212-192445578184954/ > /dev/null 2>&1 && sleep 0'
+<host020> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host020> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host020> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328 && echo ansible-tmp-1589492339.1233013-335544-30821848098328="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328 `" ) && sleep 0'
+<host020> Attempting python interpreter discovery
+<host020> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host020> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host020> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmppr1cz7f4 TO /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328/AnsiballZ_command.py
+<host020> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328/ /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328/AnsiballZ_command.py && sleep 0'
+<host020> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328/AnsiballZ_command.py && sleep 0'
+<host018> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492337.979571-335407-138519137607046/ > /dev/null 2>&1 && sleep 0'
+<host014> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492337.0978334-335288-76032815530554/ > /dev/null 2>&1 && sleep 0'
+<host021> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host021> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host021> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345 && echo ansible-tmp-1589492339.4552355-335568-47222067151345="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345 `" ) && sleep 0'
+<host019> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492338.1282759-335490-90712031922213/ > /dev/null 2>&1 && sleep 0'
+<host021> Attempting python interpreter discovery
+<host021> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host022> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host022> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host022> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685 && echo ansible-tmp-1589492339.5229752-335620-87354761677685="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685 `" ) && sleep 0'
+<host021> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host023> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host023> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host023> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594 && echo ansible-tmp-1589492339.5769167-335636-232190046620594="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594 `" ) && sleep 0'
+<host022> Attempting python interpreter discovery
+<host022> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host022> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host021> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmptg1hshzh TO /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345/AnsiballZ_command.py
+<host021> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345/ /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345/AnsiballZ_command.py && sleep 0'
+<host021> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345/AnsiballZ_command.py && sleep 0'
+<host023> Attempting python interpreter discovery
+<host023> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host023> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host022> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpow90kdo6 TO /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685/AnsiballZ_command.py
+<host022> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685/ /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685/AnsiballZ_command.py && sleep 0'
+<host022> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685/AnsiballZ_command.py && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host023> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp1es7ef_m TO /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594/AnsiballZ_command.py
+<host023> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594/ /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594/AnsiballZ_command.py && sleep 0'
+<host023> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594/AnsiballZ_command.py && sleep 0'
+<host021> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492339.4552355-335568-47222067151345/ > /dev/null 2>&1 && sleep 0'
+<host024> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host024> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host024> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162 && echo ansible-tmp-1589492339.9297228-335870-63778500751162="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162 `" ) && sleep 0'
+<host023> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492339.5769167-335636-232190046620594/ > /dev/null 2>&1 && sleep 0'
+<host024> Attempting python interpreter discovery
+<host024> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host024> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host025> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host025> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host025> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070 && echo ansible-tmp-1589492340.0197651-335885-160832723171070="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070 `" ) && sleep 0'
+<host017> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492337.6811342-335348-137531048473764/ > /dev/null 2>&1 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host024> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpf8rn0tbq TO /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162/AnsiballZ_command.py
+<host024> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162/ /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162/AnsiballZ_command.py && sleep 0'
+<host024> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162/AnsiballZ_command.py && sleep 0'
+<host025> Attempting python interpreter discovery
+<host025> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host025> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host026> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host026> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host026> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844 && echo ansible-tmp-1589492340.133488-335908-3541412851844="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844 `" ) && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host025> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpn8hzvzqb TO /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070/AnsiballZ_command.py
+<host025> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070/ /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070/AnsiballZ_command.py && sleep 0'
+<host025> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070/AnsiballZ_command.py && sleep 0'
+<host026> Attempting python interpreter discovery
+<host026> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host026> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host026> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmp1e9_g824 TO /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844/AnsiballZ_command.py
+<host026> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844/ /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844/AnsiballZ_command.py && sleep 0'
+<host026> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844/AnsiballZ_command.py && sleep 0'
+<host022> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492339.5229752-335620-87354761677685/ > /dev/null 2>&1 && sleep 0'
+ok: [host027] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+ok: [host028] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+ok: [host029] => {
+    "ansible_facts": {
+        "sleep_time": "0"
+    },
+    "changed": false
+}
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host001] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004346",
+    "end": "2020-05-14 21:38:54.158077",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.153731",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host000] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004442",
+    "end": "2020-05-14 21:38:54.161683",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.157241",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host004] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.005238",
+    "end": "2020-05-14 21:38:55.165123",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.159885",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host002] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.005680",
+    "end": "2020-05-14 21:38:56.155849",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.150169",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host003] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.006599",
+    "end": "2020-05-14 21:38:56.167407",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.160808",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host006] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.004985",
+    "end": "2020-05-14 21:38:56.567586",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.562601",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host007] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.005350",
+    "end": "2020-05-14 21:38:56.570269",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:55.564919",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host009] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.005036",
+    "end": "2020-05-14 21:38:56.576936",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:56.571900",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host008] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004442",
+    "end": "2020-05-14 21:38:56.599857",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:56.595415",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host011] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004747",
+    "end": "2020-05-14 21:38:56.997305",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:56.992558",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host012] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004496",
+    "end": "2020-05-14 21:38:57.015425",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.010929",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host015] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.005172",
+    "end": "2020-05-14 21:38:57.421219",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.416047",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host005] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:03.005859",
+    "end": "2020-05-14 21:38:57.575093",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:54.569234",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host016] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.005454",
+    "end": "2020-05-14 21:38:57.838427",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.832973",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host010] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.005348",
+    "end": "2020-05-14 21:38:58.006399",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.001051",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host013] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.005217",
+    "end": "2020-05-14 21:38:59.009405",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.004188",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host018] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.004997",
+    "end": "2020-05-14 21:38:59.295237",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:58.290240",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host014] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.005777",
+    "end": "2020-05-14 21:38:59.366562",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:57.360785",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host019] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.009137",
+    "end": "2020-05-14 21:38:59.435904",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:58.426767",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host021] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004919",
+    "end": "2020-05-14 21:38:59.815682",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:59.810763",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host023] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.006174",
+    "end": "2020-05-14 21:38:59.916416",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:59.910242",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host017] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.006144",
+    "end": "2020-05-14 21:39:00.016197",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:58.010053",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host022] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.011584",
+    "end": "2020-05-14 21:39:00.897889",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:59.886305",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+<host027> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host027> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host027> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698 && echo ansible-tmp-1589492341.3595185-336009-148907717728698="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698 `" ) && sleep 0'
+<host027> Attempting python interpreter discovery
+<host027> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host027> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+<host020> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492339.1233013-335544-30821848098328/ > /dev/null 2>&1 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host027> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpxc64jrxv TO /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698/AnsiballZ_command.py
+<host027> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698/ /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698/AnsiballZ_command.py && sleep 0'
+<host027> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698/AnsiballZ_command.py && sleep 0'
+<host028> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host028> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host028> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683 && echo ansible-tmp-1589492341.550562-336026-237817010596683="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683 `" ) && sleep 0'
+<host028> Attempting python interpreter discovery
+<host028> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host028> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host028> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpqb8g5k6a TO /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683/AnsiballZ_command.py
+<host028> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683/ /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683/AnsiballZ_command.py && sleep 0'
+<host028> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683/AnsiballZ_command.py && sleep 0'
+<host027> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492341.3595185-336009-148907717728698/ > /dev/null 2>&1 && sleep 0'
+
+TASK [random_sleep : Generate sleep time] ******************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:3
+ok: [host030] => {
+    "ansible_facts": {
+        "sleep_time": "1"
+    },
+    "changed": false
+}
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host020] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.005493",
+    "end": "2020-05-14 21:39:01.436208",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:38:59.430715",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+changed: [host027] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.004230",
+    "end": "2020-05-14 21:39:01.669959",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:01.665729",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+<host029> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host029> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host029> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002 && echo ansible-tmp-1589492341.77001-336051-77356842873002="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002 `" ) && sleep 0'
+<host029> Attempting python interpreter discovery
+<host029> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host029> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host029> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmprn82pv8u TO /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002/AnsiballZ_command.py
+<host029> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002/ /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002/AnsiballZ_command.py && sleep 0'
+<host029> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002/AnsiballZ_command.py && sleep 0'
+<host029> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492341.77001-336051-77356842873002/ > /dev/null 2>&1 && sleep 0'
+<host024> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492339.9297228-335870-63778500751162/ > /dev/null 2>&1 && sleep 0'
+<host025> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492340.0197651-335885-160832723171070/ > /dev/null 2>&1 && sleep 0'
+changed: [host029] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"0\"",
+    "delta": "0:00:00.005090",
+    "end": "2020-05-14 21:39:02.057263",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"0\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:02.052173",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact1] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact1.yml:2
+ok: [host000] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host001] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host002] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host003] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host004] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host005] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host006] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host007] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host008] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host009] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host010] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host011] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host024] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.004680",
+    "end": "2020-05-14 21:39:02.248268",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:00.243588",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact1] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact1.yml:2
+ok: [host012] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host013] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host014] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host015] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host016] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host017] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host018] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host019] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host025] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.005178",
+    "end": "2020-05-14 21:39:02.330223",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:00.325045",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact1] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact1.yml:2
+ok: [host021] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host022] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host023] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+<host026> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492340.133488-335908-3541412851844/ > /dev/null 2>&1 && sleep 0'
+<host030> ESTABLISH LOCAL CONNECTION FOR USER: centos
+<host030> EXEC /bin/sh -c 'echo ~centos && sleep 0'
+<host030> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp `"&& mkdir /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530 && echo ansible-tmp-1589492342.4580781-336131-121641616598530="` echo /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530 `" ) && sleep 0'
+<host030> Attempting python interpreter discovery
+<host030> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+<host030> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
+Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+<host030> PUT /home/centos/.ansible/tmp/ansible-local-334490q4v926ri/tmpwucds7y3 TO /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530/AnsiballZ_command.py
+<host030> EXEC /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530/ /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530/AnsiballZ_command.py && sleep 0'
+<host030> EXEC /bin/sh -c '/usr/libexec/platform-python /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530/AnsiballZ_command.py && sleep 0'
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host026] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"2\"",
+    "delta": "0:00:02.004985",
+    "end": "2020-05-14 21:39:02.418075",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"2\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:00.413090",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact1] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact1.yml:2
+ok: [host020] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+ok: [host027] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+<host028> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492341.550562-336026-237817010596683/ > /dev/null 2>&1 && sleep 0'
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host028] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.005768",
+    "end": "2020-05-14 21:39:02.837344",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:01.831576",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host000] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host001] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host002] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host003] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host004] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host005] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host006] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host007] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host008] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host009] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host010] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host011] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host012] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host013] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host014] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host015] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host016] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host017] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host018] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host019] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host021] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host022] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host023] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host024] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host025] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+ok: [host029] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host000] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host001] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host002] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host003] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host004] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host005] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host007] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host006] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host008] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host010] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host009] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host011] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host012] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host013] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host014] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host015] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host016] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host017] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host018] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host020] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host019] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host021] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+skipping: [host022] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host026] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host023] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host027] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+<host030> EXEC /bin/sh -c 'rm -f -r /home/centos/.ansible/tmp/ansible-tmp-1589492342.4580781-336131-121641616598530/ > /dev/null 2>&1 && sleep 0'
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+
+TASK [random_sleep : Do random sleep] **********************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/random_sleep/tasks/main.yml:7
+changed: [host030] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": "sleep \"1\"",
+    "delta": "0:00:01.006273",
+    "end": "2020-05-14 21:39:03.768663",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "sleep \"1\"",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-05-14 21:39:02.762390",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host024] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+META: ran handlers
+ok: [host025] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host020] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host028] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host027] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+META: ran handlers
+META: ran handlers
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host026] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+fatal: [host024]: FAILED! => {
+    "changed": false,
+    "msg": "set_a_fact didn't run fact1 not defined fact2: yay"
+}
+META: ran handlers
+META: ran handlers
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host029] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+fatal: [host025]: FAILED! => {
+    "changed": false,
+    "msg": "set_a_fact didn't run fact1 not defined fact2: yay"
+}
+
+TASK [set_a_fact : Set fact1] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact1.yml:2
+ok: [host030] => {
+    "ansible_facts": {
+        "fact1": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+fatal: [host026]: FAILED! => {
+    "changed": false,
+    "msg": "set_a_fact didn't run fact1 not defined fact2: yay"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host028] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+fatal: [host029]: FAILED! => {
+    "changed": false,
+    "msg": "set_a_fact didn't run fact1 not defined fact2: yay"
+}
+fatal: [host028]: FAILED! => {
+    "changed": false,
+    "msg": "set_a_fact didn't run fact1 not defined fact2: yay"
+}
+
+TASK [set_a_fact : Set fact2] ******************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/roles/set_a_fact/tasks/fact2.yml:2
+ok: [host030] => {
+    "ansible_facts": {
+        "fact2": "yay"
+    },
+    "changed": false
+}
+
+TASK [include didn't run] **********************************************************************************************************************************************************************************************************************************************************************************************************
+task path: /home/centos/reproducer/include-role-failures.yaml:16
+skipping: [host030] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+META: ran handlers
+META: ran handlers
+
+PLAY RECAP *************************************************************************************************************************************************************************************************************************************************************************************************************************
+host000                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host001                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host002                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host003                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host004                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host005                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host006                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host007                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host008                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host009                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host010                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host011                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host012                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host013                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host014                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host015                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host016                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host017                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host018                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host019                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host020                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host021                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host022                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host023                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host024                    : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+host025                    : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+host026                    : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+host027                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+host028                    : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+host029                    : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+host030                    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+

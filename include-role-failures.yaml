@@ -4,24 +4,7 @@
   tasks:
     - include_role:
         name: random_sleep
-    - include_role:
-        name: do_handlers
     - block:
-      - name: set facts!
-        set_fact:
-          var_a: a
-          var_b: b
-          var_c: c
-      - name: skip facts!
-        set_fact:
-          var_d: d
-          var_e: e
-          var_f: f
-        when: false
-      - name: skip more facts!
-        set_fact:
-          var_g: g
-        when: false
       - name: set a fact (1)
         include_role:
           name: set_a_fact
@@ -34,6 +17,3 @@
       fail:
         msg: "set_a_fact didn't run fact1 {{ fact1 | default('not defined')}} fact2: {{ fact2 | default('not defined') }}"
       when: (fact1 is not defined or fact2 is not defined)
-
-
-
