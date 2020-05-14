@@ -1,7 +1,7 @@
 ---
 # tasks file for do_handlers
 - name: Invoke handler
-  shell: sleep 1
+  shell: sleep "{{ 2 | random }}"
   notify:
     - My Handler
 
